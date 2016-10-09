@@ -154,12 +154,12 @@ class Interpreter(object):
                 result = result - right.value
 
             if op.value == "*":
-                raise Exception("Not Supported")
-                #result = left.value * right.value
+                #raise Exception("Not Supported")
+                result = result * right.value
 
             if op.value == "/":
-                raise Exception("Not Supported")
-                #result = left.value / right.value
+                #raise Exception("Not Supported")
+                result = result / right.value
 
         return result
 
