@@ -74,7 +74,7 @@ class Interpreter(object):
 
             multichar_integer = self.get_integer_as_string(text[self.pos:])
 
-            print "current_int: ", multichar_integer
+            print("current_int: ", multichar_integer)
 
             token = Token(INTEGER, int(multichar_integer))
             self.pos += len(multichar_integer)
